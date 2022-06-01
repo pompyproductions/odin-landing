@@ -1,0 +1,29 @@
+html {
+box-sizing: border-box;
+}
+
+*, *::before, *::after {
+box-sizing: inherit;
+}
+
+body {
+    background-color: #24211f;
+    margin: 0px;
+}
+
+header {
+    background-color: #24211f;
+    color: rgb(233, 195, 91);
+
+}
+
+h1 {
+    font-family: "Archivo", "Helvetica", sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    font-style: italic;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    padding: 60px 20px;
+    margin: 0px;
+}

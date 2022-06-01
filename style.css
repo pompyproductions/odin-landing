@@ -4,6 +4,7 @@ box-sizing: border-box;
 
 *, *::before, *::after {
 box-sizing: inherit;
+hyphens: auto;
 }
 
 body {
@@ -25,15 +26,28 @@ header {
 
 .section-1, .section-2, .section-3, .section-4 {
     padding: 40px 12vw;
-    height: 480px;
+    flex: 1 0 auto;
 }
 
 .section-1 {
     background-color: #eeebea;
+    display: flex;
+    gap: 3vw;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .section-2 {
     background-color: rgb(233, 195, 91);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section-2>* {
+    text-align: center;
+    margin: 0;
 }
 
 .hline {
@@ -62,16 +76,23 @@ a:hover {
     color: #eeebea;
 }
 
-h1 {
+a.logo {
     /* logo details */
     color: rgb(233, 195, 91);
     margin: 0;
     font-family: "Archivo", "Helvetica", sans-serif;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 900;
     font-style: italic;
     word-spacing: 10px;
     letter-spacing: 2px;
+}
+
+h1 {
+    font-family: "Archivo", "Helvetica", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    font-style: italic;
 }
 
 h2 {
@@ -90,7 +111,8 @@ p {
 
 .card-holder {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .card {
@@ -98,4 +120,22 @@ p {
     height: 360px;
     width: 240px;
     border-radius: 36px;
+    flex: 1 0 180px;
+}
+
+.left {
+    flex: 1 0 320px;
+}
+
+img {
+    height: 350px;
+}
+
+.buttons {
+    display: flex;
+}
+
+#about-button, #contact-button {
+    border: 2px rgb(60, 68, 146);
+    line-height: 32px;
 }

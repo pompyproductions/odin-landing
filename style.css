@@ -50,6 +50,19 @@ header {
     margin: 0;
 }
 
+.section-3 {
+    background-color: #eeebea;
+}
+
+.section-3>*:hover {
+    color: rgb(185, 60, 56);
+    cursor:default;
+}
+
+.section-4 {
+    background-color: #24211f;
+}
+
 .hline {
     height: 2px;
     flex: 1 0 0%;
@@ -105,7 +118,6 @@ h2 {
 p {
     font-family: "Archivo", "Helvetica", sans-serif;
     font-weight: 400;
-    margin-left: 4vw;
     line-height: 1.5;
 }
 
@@ -137,6 +149,9 @@ p {
 .left>*{
     margin: 0px;
 }
+.left>p {
+    margin-left: 4vw;
+}
 
 img {
     height: 350px;
@@ -167,4 +182,27 @@ button:hover {
 button:active {
     box-shadow:-3px -3px rgb(233, 195, 91);
     color: rgb(185, 60, 56);
+}
+
+.copyright {
+    margin: 20px 0px;
+    color: #eeebea;
+    font-size: 12px;
+    text-align: center;
+}
+
+.quote {
+    text-align: justify;
+    hyphens: auto;
+    font-size: 32px;
+    font-weight: 200;
+    font-style: italic;
+    box-shadow: 6px 6px #24211f;
+    padding: 0px 40px 20px 0px;
+    margin: 0px;
+    letter-spacing: 2px;
+}
+
+.quote:hover {
+    box-shadow: 6px 6px rgb(185, 60, 56);
 }

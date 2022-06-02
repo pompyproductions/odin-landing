@@ -130,6 +130,12 @@ p {
 
 .left {
     flex: 1 0 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.left>*{
+    margin: 0px;
 }
 
 img {

@@ -25,7 +25,7 @@ header {
 }
 
 .section-1, .section-2, .section-3, .section-4 {
-    padding: 40px 12vw;
+    padding: 80px 12vw;
     flex: 1 0 auto;
 }
 
@@ -42,7 +42,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 60px;
 }
 
 .section-2>* {
@@ -134,6 +134,16 @@ p {
     background-color: #eeebea;
     box-shadow: 0px 0px 5px 5px #eeebea;
     border-radius: 36px;
+} .card:hover, .modal:hover {
+    box-shadow: 0px 0px 0px 3px #eeebea;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} .card-header>* {
+    margin: 0px;
 }
 
 .card {
@@ -142,9 +152,7 @@ p {
     flex: 1 0 180px;
 }
 
-.card:hover, .modal:hover {
-    box-shadow: 0px 0px 0px 3px #eeebea;
-}
+
 
 .left {
     flex: 1 0 320px;

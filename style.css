@@ -81,7 +81,6 @@ header ul {
 a {
     text-decoration: none;
     color: rgb(233, 195, 91);
-    font-family: "Archivo", "Helvetica", sans-serif;
     font-size: 18px;
 }
 
@@ -93,7 +92,6 @@ a.logo {
     /* logo details */
     color: rgb(233, 195, 91);
     margin: 0;
-    font-family: "Archivo", "Helvetica", sans-serif;
     font-size: 32px;
     font-weight: 900;
     font-style: italic;
@@ -101,22 +99,27 @@ a.logo {
     letter-spacing: 2px;
 }
 
-h1 {
+h1, h2, h3, p, a {
     font-family: "Archivo", "Helvetica", sans-serif;
+}
+
+h1 {
     font-weight: 900;
     font-size: 40px;
     font-style: italic;
 }
 
 h2 {
-    font-family: "Archivo", "Helvetica", sans-serif;
     font-weight: 700;
     font-size: 28px;
     font-style: italic;
 }
 
+h3 {
+    font-weight: 700;
+}
+
 p {
-    font-family: "Archivo", "Helvetica", sans-serif;
     font-weight: 400;
     line-height: 1.5;
 }
@@ -127,16 +130,19 @@ p {
     gap: 40px;
 }
 
-.card {
+.card, .modal {
     background-color: #eeebea;
-    height: 360px;
-    width: 240px;
-    border-radius: 36px;
-    flex: 1 0 180px;
     box-shadow: 0px 0px 5px 5px #eeebea;
+    border-radius: 36px;
 }
 
-.card:hover {
+.card {
+    height: 360px;
+    width: 240px;
+    flex: 1 0 180px;
+}
+
+.card:hover, .modal:hover {
     box-shadow: 0px 0px 0px 3px #eeebea;
 }
 
@@ -205,4 +211,13 @@ button:active {
 
 .quote:hover {
     box-shadow: 6px 6px rgb(185, 60, 56);
+}
+
+.modal {
+    background-color: #eeebea;
+    border-radius: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 4vw;
 }

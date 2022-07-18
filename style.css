@@ -150,6 +150,7 @@ p {
     height: 360px;
     width: 240px;
     flex: 1 0 180px;
+    transition: all .15s;
 }
 
 
@@ -228,4 +229,5 @@ button:active {
     align-items: center;
     justify-content: space-between;
     padding: 20px 4vw;
+    transition: all .15s;
 }
